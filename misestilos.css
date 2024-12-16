@@ -1,0 +1,312 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.cabeceralogo{
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    height: 150px;
+    padding: 0% 2%;
+    background-color: #50C878;
+}
+.cabeceralogo > div{
+    flex: 1;
+    max-width: 960px;
+    padding-top: 45px;
+}
+.cabeceralogo h1 {
+    font: bold 54px Arial, sans-serif;
+    color: #000000;
+}
+.logoProvi{
+    text-align: center;
+    width: 150px;
+    height: 200px;
+}
+.menuprincipal {
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    height: 50px;
+    padding: 0% 2%;
+    background-color: #6BAF92;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #094660;
+}
+.menuprincipal > div {
+    flex: 1;
+    max-width: 960px;
+}
+.menuprincipal li {
+    display: inline-block;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+}
+.menuprincipal li:hover {
+    background-color: #6FACC6;
+}
+.menuprincipal a {
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    text-decoration: none;
+}
+main{
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    padding: 2%;
+    background-color: #50C878;
+    background-image: url("fondo.png");
+}
+main > div{
+    display: flex;
+    flex: 1;
+    max-width: 2000px;/*cambie de tamaño original es 960*/
+}
+.articulosprincipales{
+    flex: 1;
+    margin-right: 20px;
+    padding-top: 30px;
+    background-color: #50C878;
+    border-radius: 10px;
+}
+.infoadicional{
+    width: 280px;
+    padding: 20px;
+    background-image: url("logo.jpg");
+    border-radius: 10px;
+}
+.infoadicional h1{
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    margin-bottom: 15px;
+}
+article {
+    position: relative;
+    padding: 0px 40px 20px 40px;
+}
+
+article h1 {
+    margin-bottom: 5px;
+    font: bold 30px Georgia, sans-serif;
+}
+article p {
+    font: 18px Georgia, sans-serif;
+
+}
+figure{
+    margin: 10px 0px;
+}
+figure img {
+    max-width: 98%;
+    padding: 1%;
+    border: 1px solid;
+}
+.pielogo{
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    padding: 2%;
+    background-color: #6BAF92;
+}
+.pielogo >  div {
+    display: flex;
+    flex: 1;
+    max-width: 960px;
+    background-color: #50C878;
+    border-radius: 10px;
+}
+.seccionpie{
+    flex: 1;
+    padding: 25px;
+}
+.seccionpie h1 {
+    font: bold 20px Arial, sans-serif;
+}
+.seccionpie p{
+    margin-top: 5px;
+}
+.seccionpie a {
+    font: bold 16px Arial, sans-serif;
+    color: #666666;
+    text-decoration: none;
+}
+
+.listamenu > li{
+    position: relative;
+    display: inline-block;
+    height: 35px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+}
+.listamenu li > ul{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    background-color: #6BAF92;
+    box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7);
+    border-radius: 0px 0px 5px 5px;
+    list-style: none;
+    z-index: 1000;
+}
+.listamenu li > ul > li{
+    width: 120px;
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.listamenu li:hover ul{
+    display: block;
+}
+.listamenu a {
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    text-decoration: none;
+}
+.menuprincipal li:hover{
+    background-color: #50C878;
+}
+
+.titulo1{
+    text-align: center;
+}
+.frase{
+    text-align: center;
+}
+p {
+    text-align: justify; /* Justifica el texto */
+    margin: 10px;
+    line-height: 1.6; /* Mejora la legibilidad */
+  }
+
+/* Estilo del contenedor <details> */
+details {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #6BAF92;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo al expandir el <details> */
+details[open] {
+  background-color: #6BAF92;
+}
+
+/* Estilo del <summary> */
+summary {
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  list-style: none; /* Elimina el triángulo por defecto en navegadores */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Icono personalizado para <summary> */
+summary::before {
+  content: "▶"; /* Flecha cerrada */
+  display: inline-block;
+  transform: rotate(0);
+  transition: transform 0.3s ease;
+}
+
+/* Cambiar el icono al abrir */
+details[open] summary::before {
+  content: "▼"; /* Flecha abierta */
+  transform: rotate(90deg);
+}
+
+/* Estilo para los párrafos dentro de <details> */
+details p {
+  margin: 10px 0 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.fondo{
+    display: block; /* Necesario para aplicar margin:auto */
+      margin: 0 auto; /* Centra la imagen horizontalmente */
+      max-width: 100%; /* Opcional: Hace que la imagen sea responsive */
+      height: auto;
+      
+}
+.titulo2{
+    font: bold 15px Arial, sans-serif;
+    text-align: center;
+}
+
+/* Contenedor de la galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Columnas adaptables */
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  /* Estilo para cada imagen */
+  .galeria img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Efecto hover */
+  .galeria img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Añade sombra */
+  }
+  .galeria img:hover {
+transform: scale(1.1);
+filter: brightness(1.2) saturate(1.5); /* Aumenta brillo y saturación */
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+    /* Estilos de la tabla */
+    table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse; /* Elimina los espacios entre bordes */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+      }
+  
+      /* Estilo de los encabezados */
+      th {
+        background-color: #50C878;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        text-align: center;
+      }
+  
+      /* Estilo de las celdas */
+      td {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
+  
+      /* Alternar color de filas */
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+  
+      tr:nth-child(odd) {
+        background-color: #fff;
+      }
+  
+      /* Efecto hover */
+      tr:hover {
+        background-color: #d1ffd6;
+        transition: background-color 0.3s ease;
+      }
